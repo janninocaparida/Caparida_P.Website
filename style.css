@@ -427,4 +427,36 @@ footer {
   .menu-toggle {
     display: block;
   }
+
+  .certs-dropdown {
+    position: fixed;
+    top: 72px !important;
+    right: 16px !important;
+    left: 16px !important;
+    width: auto !important;
+    max-width: calc(100% - 32px) !important;
+  }
+
+  .certs-dropdown.active {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cert-modal .modal-card {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .cert-modal img {
+    max-height: 50vh;
+  }
+
+  .cert-modal .modal-actions {
+    width: 100%;
+  }
+
+  .cert-modal .modal-actions button,
+  .cert-modal .modal-actions .btn {
+    width: 100%;
+  }
 }
